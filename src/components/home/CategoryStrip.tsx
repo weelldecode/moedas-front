@@ -30,21 +30,21 @@ const bannerCategories = [
 ];
 
 const containerVariants = {
-  hidden: { opacity: 0, y: 10 },
+   hidden: { opacity: 0, y: 12, scale: 0.98 },
   show: {
     opacity: 1,
     y: 0,
+    scale: 1,
     transition: {
-      duration: 0.45,
-      ease: "easeOut",
-      staggerChildren: 0.08,
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1],
     },
   },
 };
 
 const cardVariants = {
   hidden: { opacity: 0, y: 14, scale: 0.99 },
-  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
 };
 
 function CategoryBannerCard({ c }: { c: typeof bannerCategories[0] }) {
