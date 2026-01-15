@@ -1,0 +1,38 @@
+<svg width="450" height="450" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="goldGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="40%" style="stop-color:#ffcc00"/>
+      <stop offset="80%" style="stop-color:#e6b800"/>
+      <stop offset="100%" style="stop-color:#cc9900"/>
+    </radialGradient>
+    <filter id="goldShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="15" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Coin base -->
+  <circle cx="225" cy="225" r="200" fill="url(#goldGradient)" filter="url(#goldShadow)" stroke="#b8860b" stroke-width="3"/>
+  
+  <!-- Inner circle -->
+  <circle cx="225" cy="225" r="180" fill="none" stroke="#daa520" stroke-width="2"/>
+  
+  <!-- Text around edge -->
+  <path id="gold-circle-text" d="M 225,225 m -160,0 a 160,160 0 1,1 320,0 a 160,160 0 1,1 -320,0" fill="none"/>
+  <text font-family="serif" font-size="14" font-weight="bold" fill="#8b4513">
+    <textPath href="#gold-circle-text">UNITED STATES OF AMERICA • TWENTY DOLLARS •</textPath>
+  </text>
+  
+  <!-- Center design -->
+  <text x="225" y="190" text-anchor="middle" font-family="serif" font-size="20" font-weight="bold" fill="#654321">SAINT</text>
+  <text x="225" y="215" text-anchor="middle" font-family="serif" font-size="20" font-weight="bold" fill="#654321">GAUDENS</text>
+  <text x="225" y="245" text-anchor="middle" font-family="serif" font-size="18" fill="#8b4513">1924</text>
+  <text x="225" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#8b4513">TWENTY DOLLARS</text>
+  
+  <!-- Eagle silhouette -->
+  <path d="M 200 160 Q 225 150 250 160 Q 240 170 225 175 Q 210 170 200 160" fill="#8b4513"/>
+  
+  <!-- Stars -->
+  <text x="180" y="140" text-anchor="middle" font-family="serif" font-size="12" fill="#8b4513">★</text>
+  <text x="270" y="140" text-anchor="middle" font-family="serif" font-size="12" fill="#8b4513">★</text>
+</svg>

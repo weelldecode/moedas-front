@@ -1,0 +1,35 @@
+<svg width="450" height="450" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="coinGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" style="stop-color:#f5f5f5"/>
+      <stop offset="40%" style="stop-color:#e8e8e8"/>
+      <stop offset="80%" style="stop-color:#d0d0d0"/>
+      <stop offset="100%" style="stop-color:#b8b8b8"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="15" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Coin base -->
+  <circle cx="225" cy="225" r="200" fill="url(#coinGradient)" filter="url(#shadow)" stroke="#a0a0a0" stroke-width="2"/>
+  
+  <!-- Inner circle -->
+  <circle cx="225" cy="225" r="180" fill="none" stroke="#999" stroke-width="1"/>
+  
+  <!-- Text around edge -->
+  <path id="circle-text" d="M 225,225 m -160,0 a 160,160 0 1,1 320,0 a 160,160 0 1,1 -320,0" fill="none"/>
+  <text font-family="serif" font-size="14" font-weight="bold" fill="#666">
+    <textPath href="#circle-text">UNITED STATES OF AMERICA • E PLURIBUS UNUM •</textPath>
+  </text>
+  
+  <!-- Center design -->
+  <text x="225" y="200" text-anchor="middle" font-family="serif" font-size="24" font-weight="bold" fill="#555">LIBERTY</text>
+  <text x="225" y="230" text-anchor="middle" font-family="serif" font-size="18" fill="#666">1881</text>
+  <text x="225" y="260" text-anchor="middle" font-family="serif" font-size="14" fill="#777">ONE DOLLAR</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="225" cy="180" r="3" fill="#888"/>
+  <circle cx="200" cy="200" r="2" fill="#888"/>
+  <circle cx="250" cy="200" r="2" fill="#888"/>
+</svg>
